@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>War</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <main>
+
+
+      <section class="table">
+
+        <div class="cpu">
+          <h3>Dealer <i class="fa fa-user-circle dealer"></i></h3>
+          <section>
+            <ul class="hand">
+              <li> <img src="card.jpg" alt=""> </li>
+              <li> <img src="card.jpg" alt=""> </li>
+              <li> <img src="card.jpg" alt=""> </li>
+              <li class="cpucard"></li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="bank">
+          <section>
+            <span>Cash:</span>
+            <p id="cash"></p>
+          </section>
+          <section>
+            <span>Bet:</span>
+            <p id="bet"></p>
+          </section>
+        </section>
+
+
+      <section class="results">
+        <p id="war"></p>
+        <p id="winner"></p>
+        <i class="fa fa-smile-o smile"></i>
+        <i class="fa fa-frown-o frown"></i>
+      </section>
+
+
+      <section class="rules">
+        <h3>These are the rules:</h3>
+        <ul>
+          <li>Deal: starts game and deals cards</li>
+          <li>Bet: Player determines how much they want to bet(10, 20, 50, 100)</li>
+          <li>If Player and Dealer are dealt matching cards Player will be asked would they want to play war or surrender.</li>
+          <li>War: If Player says war when prompted cards will be dealt again for possibly winning double the bet <b>OR</b> losing double the bet.</li>
+          <li>Surrender: If Player says surrender when prompted the game will end and Player loses bet.</li>
+        </ul>
+      </section>
+
+
+        <div class="user">
+          <h3>Player <i class="fa fa-user-circle-o user"></i></h3>
+          <section>
+            <ul class="hand">
+              <li> <img src="card.jpg" alt=""> </li>
+              <li> <img src="card.jpg" alt=""> </li>
+              <li> <img src="card.jpg" alt=""> </li>
+              <li class="usercard"></li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="buttons">
+          <button type="button" id="go" name="button">Deal</button>
+          <button type="button"  class="bet" value="10" name="button">Bet 10$</button>
+          <button type="button"  class="bet" value="20" name="button">Bet 20$</button>
+          <button type="button"  class="bet" value="50" name="button">Bet 50$</button>
+          <button type="button"  class="bet" value="100" name="button">Bet 100$</button>
+        </section>
+
+      </section>
+    </main>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
